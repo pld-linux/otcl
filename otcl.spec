@@ -2,7 +2,7 @@ Summary:	Extension to Tcl/Tk for object-oriented programming
 Summary(pl):	Rozszerzenie Tcl/Tk do programowania zorientowanego obiektowo
 Name:		otcl
 Version:	1.8
-Release:	2
+Release:	3
 License:	MIT
 Group:		Development/Languages/Tcl
 Source0:	http://dl.sourceforge.net/otcl-tclcl/%{name}-%{version}.tar.gz
