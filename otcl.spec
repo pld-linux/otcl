@@ -1,16 +1,16 @@
 Summary:	Extension to Tcl/Tk for object-oriented programming
 Summary(pl):	Rozszerzenie Tcl/Tk do programowania zorientowanego obiektowo
 Name:		otcl
-Version:	1.0a8
+Version:	1.8
 Release:	1
 License:	MIT
 Group:		Development/Languages/Tcl
-Source0:	http://www.isi.edu/nsnam/dist/%{name}-%{version}.tar.gz
-# Source0-md5:	f9704db2d45b2be561bd501e1996fc38
+Source0:	http://dl.sourceforge.net/otcl-tclcl/%{name}-%{version}.tar.gz
+# Source0-md5:	88a4b94b3a128867d3fe13b77f3b5496
 URL:		http://otcl-tclcl.sourceforge.net/otcl/
 BuildRequires:	autoconf
-BuildRequires:	tcl-devel = 8.4.4
-BuildRequires:	tk-devel = 8.4.4
+BuildRequires:	tcl-devel >= 8.4
+BuildRequires:	tk-devel >= 8.4
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -71,8 +71,8 @@ Biblioteka statyczna OTcl.
 %build
 %{__autoconf}
 ./configure \
-	--with-tcl-ver=8.4.4 \
-	--with-tk-ver=8.4.4
+	--with-tcl-ver=8.4 \
+	--with-tk-ver=8.4
 %{__make} CFLAGS="%{rpmcflags}"
 %{__make} CFLAGS="%{rpmcflags}"
 
