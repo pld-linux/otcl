@@ -10,6 +10,7 @@ Source0:	http://dl.sourceforge.net/otcl-tclcl/%{name}-%{version}.tar.gz
 Patch0:		tcl-lib.patch
 URL:		http://otcl-tclcl.sourceforge.net/otcl/
 BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	tcl-devel >= 8.4
 BuildRequires:	tk-devel >= 8.4
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -46,7 +47,7 @@ Pewne z cech OTcl-a w porównaniu do alternatywnych:
 Summary:	OTcl header file
 Summary(pl):	Plik nag³ówkowy OTcl
 Group:		Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{version}
 
 %description devel
 OTcl header file.
@@ -58,7 +59,7 @@ Plik nag³ówkowy OTcl.
 Summary:	OTcl static library
 Summary(pl):	Biblioteka statyczna OTcl
 Group:		Development/Libraries
-Requires:	%{name}-devel = %{version}
+Requires:	%{name}-devel = %{version}-%{version}
 
 %description static
 OTcl static library.
@@ -76,8 +77,10 @@ cp -f /usr/share/automake/config.sub .
 ./configure \
 	--with-tcl-ver=8.4 \
 	--with-tk-ver=8.4
-%{__make} CFLAGS="%{rpmcflags}"
-%{__make} CFLAGS="%{rpmcflags}"
+%{__make} \
+	CFLAGS="%{rpmcflags}"
+%{__make} \
+	CFLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
