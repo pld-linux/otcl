@@ -47,7 +47,7 @@ Pewne z cech OTcl-a w porównaniu do alternatywnych:
 Summary:	OTcl header file
 Summary(pl):	Plik nag³ówkowy OTcl
 Group:		Development/Libraries
-Requires:	%{name} = %{version}-%{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description devel
 OTcl header file.
@@ -59,7 +59,7 @@ Plik nag³ówkowy OTcl.
 Summary:	OTcl static library
 Summary(pl):	Biblioteka statyczna OTcl
 Group:		Development/Libraries
-Requires:	%{name}-devel = %{version}-%{version}
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 OTcl static library.
@@ -74,13 +74,12 @@ Biblioteka statyczna OTcl.
 %build
 cp -f /usr/share/automake/config.sub .
 %{__autoconf}
-./configure \
+%configure \
 	--with-tcl-ver=8.4 \
 	--with-tk-ver=8.4
-%{__make} \
-	CFLAGS="%{rpmcflags}"
-%{__make} \
-	CFLAGS="%{rpmcflags}"
+%{__make} 
+# and make again for shared library
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
