@@ -69,6 +69,7 @@ Biblioteka statyczna OTcl.
 %setup -q
 
 %build
+cp -f /usr/share/automake/config.sub .
 %{__autoconf}
 ./configure \
 	--with-tcl-ver=8.4 \
