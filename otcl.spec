@@ -28,15 +28,15 @@ Some of OTcl's features as compared to alternatives are:
    hacks)
 
 %description -l pl
-OTcl, skrót Objektowego Tcl MIT, jest rozszerzeniem Tcl/Tk do
+OTcl, skrót od Obiektowego Tcl MIT, jest rozszerzeniem Tcl/Tk do
 programowania zorientowanego obiektowo.
 
-Pewne z cech OTcl'a w porównaniu do alternatywnych:
+Pewne z cech OTcl-a w porównaniu do alternatywnych:
 
  * zaprojektowany by byæ dynamicznie rozszerzalnym, jak Tcl, od zera
  * oparty na sk³adni i koncepcie Tcl zamiast importowania innego
    jêzyka
- * kompaktowy acz potê¿ny system programowania objektowego (CLOS,
+ * kompaktowy acz potê¿ny system programowania obiektowego (CLOS,
    Smalltalk oraz Self)
  * raczej przeno¶na implementacja (2000 linii C bez niskopoziomowych
    wstawek)
