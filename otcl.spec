@@ -48,6 +48,7 @@ Summary:	OTcl header file
 Summary(pl):	Plik nag³ówkowy OTcl
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
+Obsoletes:	otcl-static
 
 %description devel
 OTcl header file.
@@ -106,7 +107,7 @@ rm -rf $RPM_BUILD_ROOT
 %files devel
 %defattr(644,root,root,755)
 %{_includedir}/*
-
-%files static
-%defattr(644,root,root,755)
 %{_libdir}/*.a
+
+#%files static
+#%defattr(644,root,root,755)
