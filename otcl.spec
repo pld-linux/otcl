@@ -1,5 +1,5 @@
 Summary:	Extension to Tcl/Tk for object-oriented programming
-Summary(pl):	Rozszerzenie Tcl/Tk do programowania zorientowanego obiektowo
+Summary(pl.UTF-8):   Rozszerzenie Tcl/Tk do programowania zorientowanego obiektowo
 Name:		otcl
 Version:	1.11
 Release:	1
@@ -29,23 +29,23 @@ Some of OTcl's features as compared to alternatives are:
  * fairly portable implementation (2000 lines of C, without core
    hacks)
 
-%description -l pl
-OTcl, skrót od Obiektowego Tcl MIT, jest rozszerzeniem Tcl/Tk do
+%description -l pl.UTF-8
+OTcl, skrÃ³t od Obiektowego Tcl MIT, jest rozszerzeniem Tcl/Tk do
 programowania zorientowanego obiektowo.
 
-Pewne z cech OTcl-a w porównaniu do alternatywnych:
+Pewne z cech OTcl-a w porÃ³wnaniu do alternatywnych:
 
- * zaprojektowany by byæ dynamicznie rozszerzalnym, jak Tcl, od zera
- * oparty na sk³adni i koncepcie Tcl zamiast importowania innego
-   jêzyka
- * kompaktowy acz potê¿ny system programowania obiektowego (CLOS,
+ * zaprojektowany by byÄ‡ dynamicznie rozszerzalnym, jak Tcl, od zera
+ * oparty na skÅ‚adni i koncepcie Tcl zamiast importowania innego
+   jÄ™zyka
+ * kompaktowy acz potÄ™Å¼ny system programowania obiektowego (CLOS,
    Smalltalk oraz Self)
- * raczej przeno¶na implementacja (2000 linii C bez niskopoziomowych
+ * raczej przenoÅ›na implementacja (2000 linii C bez niskopoziomowych
    wstawek)
 
 %package devel
 Summary:	OTcl header file
-Summary(pl):	Plik nag³ówkowy OTcl
+Summary(pl.UTF-8):   Plik nagÅ‚Ã³wkowy OTcl
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Obsoletes:	otcl-static
@@ -53,19 +53,19 @@ Obsoletes:	otcl-static
 %description devel
 OTcl header file.
 
-%description devel -l pl
-Plik nag³ówkowy OTcl.
+%description devel -l pl.UTF-8
+Plik nagÅ‚Ã³wkowy OTcl.
 
 %package static
 Summary:	OTcl static library
-Summary(pl):	Biblioteka statyczna OTcl
+Summary(pl.UTF-8):   Biblioteka statyczna OTcl
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 OTcl static library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Biblioteka statyczna OTcl.
 
 %prep
