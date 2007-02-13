@@ -1,5 +1,5 @@
 Summary:	Extension to Tcl/Tk for object-oriented programming
-Summary(pl.UTF-8):   Rozszerzenie Tcl/Tk do programowania zorientowanego obiektowo
+Summary(pl.UTF-8):	Rozszerzenie Tcl/Tk do programowania zorientowanego obiektowo
 Name:		otcl
 Version:	1.11
 Release:	1
@@ -45,7 +45,7 @@ Pewne z cech OTcl-a w porównaniu do alternatywnych:
 
 %package devel
 Summary:	OTcl header file
-Summary(pl.UTF-8):   Plik nagłówkowy OTcl
+Summary(pl.UTF-8):	Plik nagłówkowy OTcl
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Obsoletes:	otcl-static
@@ -58,7 +58,7 @@ Plik nagłówkowy OTcl.
 
 %package static
 Summary:	OTcl static library
-Summary(pl.UTF-8):   Biblioteka statyczna OTcl
+Summary(pl.UTF-8):	Biblioteka statyczna OTcl
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
